@@ -11,11 +11,24 @@ header {
     padding: 20px;
 }
 
-section {
+section.feature-box {
     background: rgb(249, 249, 230);
-    padding: 20px;
+    margin: 3px;
     display: flex;
     flex-direction: row;
+}
+
+.feature-box div {
+    width: 100%;
+    margin: 1px;
+}
+
+.feature-box.sales div {
+    background: rgba(154, 225, 135, 0.829);
+}
+
+.feature-box.closeouts div {
+    background: rgba(154, 225, 135, 0.671);
 }
 
 div {
@@ -32,7 +45,26 @@ ul {
 
 li {
     display: inline-block;
-    margin-right: 20px;
+    background-color: rgb(246, 246, 246);
+    margin-left: 20px;
+    padding: 2px;
+}
+
+li:hover {
+    background-color: white;
+}
+
+li:first-child {
+    background: rgb(249, 249, 230);
+    margin-left: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 footer {
