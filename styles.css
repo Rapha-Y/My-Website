@@ -16,6 +16,10 @@ header {
     text-align: center;
 }
 
+header .mobile {
+    display: none;
+}
+
 .logo {
     background-image: url("images/sbrlogo.png");
     background-size: 300px;
@@ -44,7 +48,7 @@ section.feature-box {
 }
 
 .feature-box figure img {
-    background-color: rgb(50, 185, 50);
+    background-color: white;
     border: 1px solid white;
     border-radius: 100%;
     box-shadow: gray 0px 0px 10px;
@@ -87,4 +91,47 @@ footer {
     font-size: 12px;
     padding: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 932px) {
+    header {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 816px) {
+    header {
+        height: 250px;
+    }
+    
+    header .mobile {
+        display: inline-block;
+    }
+
+    header .desktop {
+        display: none;
+    }
+
+    li {
+        margin-top: 0px;
+    }
+
+    .logo {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    header {
+        height: 200px;
+    }
+
+    .logo {
+        background-size: 200px;
+        margin-left: 120px;
+    }
+
+    section.feature-box {
+        display: block;
+    }
 }
